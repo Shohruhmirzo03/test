@@ -1,0 +1,79 @@
+git buyruqlari
+
+Dastlabki sozlashlar
+
+git config - gitni sozalash buyrug’i
+
+git config --global user.name "[name]" - bajarilgan commitlarni avtor maydonida ko’rinib turuvchi ismni o’rnatish
+
+git config --global user.email "[elektron pochta manzili]" - bajarilgan commitlarda ko’rinib turuvchi elektron pochta manzili.
+
+git config --list - sozlamalar ro’yxati
+
+git config user.name - user ismini ko’rish
+
+git config user.email - user emailini ko’rish
+
+Repozitoriy yaratish
+
+git init [loyixa nomi] - Berilgan nom bilan local repozitory hosil qilish
+
+git clone [url-manzil] - Repozitory ni tarixi va o’zgarishlari bilan yuklab (skachat qilib) olish
+
+O'zgartirish
+
+git status - loyixaga kiritilgan o’zgarishlarni ko’rsatish
+
+git add [fayl] - faylni loyixaga qo’shish uchun navbatga qo’yish.
+
+git add . - shu loyixadaga barcha o’zgarishlarni navbatga qo’yish
+
+git reset [fayl] - faylni navbatdan olib tashlash.
+
+git reset - barcha o’zgarishlarni navbatdan olib tashlash
+
+git commit -m "[izoh]" - Navbatda turgan ma’lumotlarni repozitoryga qo’shish
+
+Tarixni ko'rish
+
+git log - Barcha commitlarni ko’rish
+
+git log --follow [fayl] - Aniq bir faylni o’zgarishlar tarixini ko’rish
+
+git show [commit] - shu commitda qanday o’zgarishlar bo’lganini ko’rish
+
+git checkout [fayl nomi] - faylga kiritilgan o’zgarishlarni qaytish
+
+git checkout [commit] - Codi ko’rsatilgan commitga qaytish
+
+git checkout [branch name] - nomi ko’rsatilgan brachga o’tish
+
+Jamoaviy ish
+
+git branch - Mavjud branchlarni ko’rish
+
+git branch [branch nomi] - Yangi branch ochish
+
+git branch -d [branch nomi] - Branchni o’chirish
+
+
+Orqaga qaytarish majburiyatlari
+
+git log --oneline --graph --decorate --all - commitlarni ko’rish
+
+git reset [commit] - Ishchi katalogdagi barcha o'zgarishlarni qoldirib, belgilanganidan keyin barcha topshiriqlarni bekor qiladi
+
+git reset --hard [коммит] - commitlarni va loyixaga kititilgan o’zgarishlarni ham tashlab yuborish (tiklash)
+
+Masofaviy repozitory bilan sinxronlash
+
+git push [masofaviy repozitory] [branch] - Mahalliy filialdagi barcha o'zgarishlarni masofaviy omborga yuklaydi. (git push origin HEAD)
+git fetch [удалённый репозиторий] - Butun tarixni masofaviy ombordan yuklab oladi. (git fetch origin)
+git merge [удалённый репозиторий]/[ветка] - fetch qilingandan so’ng masofaviy repozitoryni, branch bilan birlashtirish uchun merge qilish kerak. (git merge origin/main)
+git pull - Masofaviy ombordan tarixni yuklaydi va uni mahalliy bilan birlashtiradi. pull = fetch + merge
+
+
+
+
+
+

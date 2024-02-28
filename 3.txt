@@ -1,0 +1,136 @@
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git init
+Initialized empty Git repository in E:/5-oy/3-vazifa/.git/
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git config --global user.name "Shohruh"
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git config --global user.email "shohruh@gmail.com"
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git config user.name
+Shohruh
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git config user.email
+shohruh@gmail.com
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git add 3-vazifa.py
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   3-vazifa.py
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git reset 3-vazifa.py
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git add 3-vazifa.py
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git commit -m "3-vazifa.py faylini qo'shdim"
+[master (root-commit) 697e043] 3-vazifa.py faylini qo'shdim
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 3-vazifa.py
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git log
+commit 697e043139fb8825ff72ed4eb7c10ad0c6e28ccc (HEAD -> master)
+Author: Shohruh <shohruh@gmail.com>
+Date:   Wed Feb 28 00:05:57 2024 +0500
+
+    3-vazifa.py faylini qo'shdim
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git chackout
+git: 'chackout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch test
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch text1
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch test2
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch test3
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch test4
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch
+* master
+  test
+  test2
+  test3
+  test4
+  text1
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch -d test4
+Deleted branch test4 (was 697e043).
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch test3
+fatal: a branch named 'test3' already exists
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch test2
+fatal: a branch named 'test2' already exists
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch
+* master
+  test
+  test2
+  test3
+  text1
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch -d test3
+Deleted branch test3 (was 697e043).
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch -d test2
+Deleted branch test2 (was 697e043).
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch -d test1
+error: branch 'test1' not found
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$ git branch
+* master
+  test
+  text1
+
+asus@DESKTOP-PDK3VO3 MINGW64 /e/5-oy/3-vazifa (master)
+$
+
